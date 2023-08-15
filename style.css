@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap");
+
+@media screen and (min-width: 1281px) {
+  #gardening-kits {
+      background-color: #dfdfdf;
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+html {
+  behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* navigation */
+.navigation {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  /* background-color: #202020; */
+
+  opacity: 0.8;
+}
+
+.logo img {
+  width: 4vw;
+  object-fit: cover;
+  filter: brightness(220%);
+  padding: 1rem 6rem;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.9rem;
+  text-align: center;
+  align-items: center;
+  background-color: #202020;
+  border-radius: 2rem;
+  padding: 0.5rem 0;
+  margin-top: 10px;
+}
+
+.links li,
+a {
+  color: #ffffff;
+  display: inline-block;
+  padding: 3px 5px;
+  transition: all 300ms smooth;
+  margin: 5px;
+  font-weight: 900;
+}
+
+.links li:hover {
+  border: 0.5px solid #cea135;
+  padding: 2px 4px;
+  background: rgb(0, 0, 0);
+  border-radius: 18px;
+}
+
+/* background image */
+.background {
+  position: relative;
+  top: 0;
+  background-image: url(image/background-1.jpg);
+  width: 100%;
+  height: 98vh;
+  object-fit: contain;
+  object-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.text {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  font-family: "Open Sans", sans-serif;
+
+  width: 12%;
+  margin-left: 19px;
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+/* services */
+#services {
+  background-color: #f8f8f8;
+  opacity: 0.85;
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #00d9ff;
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+#services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 8px;
+}
+
+#services > .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2.2px solid #4793aa;
+  margin-left: 6px;
+  margin-right: 6px;
+  transition: all 300ms ease-out;
+}
+
+h4 {
+  font-weight: 500;
+}
+
+#services > .item:hover {
+  background-color: #ffffff;
+  filter: brightness(75%);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* indoor plants */
+#gardening-kits {
+  background-color: #dfdfdf;
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+
+#gardening-kits h1 {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 3rem;
+  color: #227494;
+}
+
+.gardening-kits {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  row-gap: 4rem;
+  padding: 5%;
+}
+
+.container-tree img {
+  width: 300px;
+  height: 400px;
+  margin-bottom: 20px;
+  border: 0.8px solid #cea135;
+  border-radius: 6px;
+}
+
+.container-tree {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3rem 0px 1rem 0px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: #fdfcfc;
+
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+.container-tree:hover {
+  cursor: pointer;
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.6);
+  transition: all 300ms ease-out;
+}
+
+.content-tree {
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/*Form*/
+.form{
+  background: rgba(0, 0, 0, 0.33);
+  padding: 0 2rem 2rem 2rem;
+  border-radius: 2rem;
+  
+}
+#contact > .text {
+  text-align: center;
+  margin-bottom: 6rem;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form > .form-group {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.form input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+
+  border-radius: 2px;
+  border: none;
+  border-bottom: 3px solid #11122b;
+  width: 100%;
+  display: block;
+  transition: all 0.3s;
+}
+
+.form textarea {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  border-radius: 2px;
+  border: 3px solid #11122b;
+  width: 100%;
+  margin-top: 20px;
+  display: block;
+  height: 250px;
+  transition: all 300ms ease;
+}
+
+.btn {
+  background-color: #cea135;
+  color: #11122b;
+  font-size: 1.25em;
+  padding: 10px 25px;
+  border: 1px solid#cea135;
+  border-radius: 2px;
+  outline: none;
+  transition: 0.25s;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+ 
+  margin-top: 35px;
+}
+
+.button:hover {
+  cursor: default;
+}
+
+.btn:active {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.form label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+  color: #cea135;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.form textarea:focus {
+  outline: none;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+  border: 3px solid #cea135;
+}
+
+.form input:focus {
+  outline: none;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #cea135;
+}
+
+.form input:focus::-webkit-input-placeholder,
+.form textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form input:focus + label,
+.form textarea:focus + label {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(1rem);
+}
+
+#contact {
+  position: relative;
+  margin: 30px;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.email-section {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+  margin: 1.8rem 12rem;
+  padding: 1.1rem;
+  margin-bottom: 4rem;
+  margin-top: -2.9rem;
+  font-size: 1.4rem;
+  gap: 0.5rem;
+  text-align: center;
+  transition: all 300ms ease-out;
+}
+
+.email-section i {
+  font-size: 2rem;
+}
+
+.email-section:hover {
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.4);
+  background: #ffffff;
+}
+
+.tree-name {
+  letter-spacing: 0.5px;
+}
+
+.tree-price {
+  letter-spacing: 2px;
+}
+
+/* footer section */
+footer{
+  background-color: #11122b;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8%;
+}
+.footer-2 {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-2> .links {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.footer-2 > .links li a {
+  border: none;
+  border-radius: 22px;
+}
+
+.footer-2> .logo img {
+  width: 6vw;
+}
+
+.social-media {
+  filter: invert(100%);
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.6rem;
+  text-align: center;
+  align-items: center;
+ margin: 7px;
+}
+
+.social-media li,
+a {
+  color: #ffffff;
+  display: inline-block;
+  transition: all 300ms smooth;
+}
+
+.social-media li:hover {
+  border: 0.1px solid #cea135;
+  font-size: 1.4rem;
+  border-radius: 18px;
+
+} 
+
+ .footer-2 > .copyright {
+  margin-top: 9px;
+  color: #fdfcfc;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+
+}
+.logo-2 img{
+  width: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.price-off h2{
+  padding: 1rem;
+  font-size: 3.4rem;
+
+  letter-spacing: .1rem;
+}
+
+.price-off{
+  
+  border: 1px solid #11122b;
+  padding-top: 0;
+  padding-bottom: 1rem;
+  text-align: center;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+
+}
+.price-off p{
+  margin-left: 2%;
+  margin-right: 2%;
+
+  color: #083d5e;
+}
+
+#contact > .text{
+display: grid;
+grid-template-columns: 1fr;
+justify-content: center;
+align-items: center;
+width: 100%;
+background-color: rgba(0,0,0,.15);
+}
+
+
+#contact > .text > .p1,h1{
+align-items: center;
+justify-content: center;
+color:#ffffff;
+filter: contrast(200%)
+};
