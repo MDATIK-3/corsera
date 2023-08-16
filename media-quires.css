@@ -1,7 +1,82 @@
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 1096px) {
     #gardening-kits {
         background-color: #dfdfdf;
         padding-left: 15%;
         padding-right: 15%;
       }
+      
+     
+     
+      
+}
+
+@media screen and (min-width:650px) {
+  .logo img{
+    width: 4vw;
+  }
+  
+  .text{
+    width: 12%;
+  }
+  .gardening-kits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4.2rem;
+    row-gap: 4rem;
+   margin: 2rem 4rem;
+    align-items:center;
+    justify-content: center;
+   
+  }
+  .price-off h2{
+  
+    font-size: 3.4rem;
+  
+   
+  }
+  .form{
+    width: 600px;
+  }
+  
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 610px) {
+  .links{
+    flex-direction: column;
+   
+  }
+  .logo img {
+    width: 16vw;
+   
+    
+  }
+  #home{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .text {
+
+   width: 80%;
+  }
+  .gardening-kits {
+     display: flex;
+     flex-direction: column;
+   margin: 2rem;
+   gap: 2.2rem;
+  
+  
+}
+
+
+
+
+
 }
